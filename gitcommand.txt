@@ -5,16 +5,22 @@
 4. Remote repository : 깃허브
 
 <기본 명령어>
-git clone 깃허브링크  : 해당 깃허브링크를 복사해 깃허브라이브러리를 사용하게 해주는 명령어
-git add 자료명 : working directory 에서 staging area로 자료를 넘기는 명령어
+1. git clone 깃허브링크  : 해당 깃허브링크를 복사해 깃허브라이브러리를 사용하게 해주는 명령어
+2. git add 자료명 : working directory 에서 staging area로 자료를 넘기는 명령어
 할 거 다하고나서 staging area에 올려야한다.
-git commit -m : staging area에서 local repository로 넘기는 명령어
-이거만 하면, github에는 반영안됨
-git push : local repository에서 remote repository로 넘기는 명령어
-push해야 깃헙에 반영됨
+3. git add . : 모든 변경사항 staging area에 저장
+4. git reset 자료명 : git add를 한 것을 되돌린다.
 
-git fetch : 깃헙에서 받아오기 
-git merge : 로컬에서 working directory로 받아오기
+5. git commit -m "comment": staging area에서 local repository로 넘기는 명령어
+이거만 하면, github에는 반영안됨
+6. git push : local repository에서 remote repository로 넘기는 명령어
+push해야 깃헙에 반영됨
+7. git status : 현재 working directory의 상태 확인하기(수정된 파일이 있으면 알려줌.)
+8. git restore 파일명 : git status를 했을 때, 변경사항이 있는 파일들이 나온다. 이 파일들의 변경사항을 무시할 때
+사용한다.
+9. git fetch : 깃헙에서 받아오기 
+10. git merge : 로컬에서 working directory로 받아오기
 다른 유저의 수정 내역과의 충돌을 피하기 위해 사용된다.
 
-git pull : 위의 fetch 와 merge를 한번에 수행하는 명령어
+11. git pull : 위의 fetch 와 merge를 한번에 수행하는 명령어
+
