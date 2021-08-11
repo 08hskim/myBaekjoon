@@ -1,0 +1,20 @@
+알아야 할 공간들 
+1. Working directory : 작업할 파일이 있는 디렉토리
+2. Staging Area : commit할 파일들이 올라가는 영역
+3. local repository : 개인 pc등 데이터 정보가 저장되는 로컬 디렉토리
+4. Remote repository : 깃허브
+
+<기본 명령어>
+git clone 깃허브링크  : 해당 깃허브링크를 복사해 깃허브라이브러리를 사용하게 해주는 명령어
+git add 자료명 : working directory 에서 staging area로 자료를 넘기는 명령어
+할 거 다하고나서 staging area에 올려야한다.
+git commit -m : staging area에서 local repository로 넘기는 명령어
+이거만 하면, github에는 반영안됨
+git push : local repository에서 remote repository로 넘기는 명령어
+push해야 깃헙에 반영됨
+
+git fetch : 깃헙에서 받아오기 
+git merge : 로컬에서 working directory로 받아오기
+다른 유저의 수정 내역과의 충돌을 피하기 위해 사용된다.
+
+git pull : 위의 fetch 와 merge를 한번에 수행하는 명령어
